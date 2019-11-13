@@ -3,6 +3,15 @@
 
 // Write your Javascript code.
 
+var form = document.getElementById("board")
+var cells = document.getElementsByClassName("cell");
+for (var i = 0; i < cells.length; i++) {
+    cells[i].addEventListener(event => {
+        event.preventDefault();
+    })
+}
+
+/*
 var turn = "x";
 
 function setTurn() {

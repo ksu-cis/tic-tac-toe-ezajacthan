@@ -7,9 +7,12 @@ body {
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+form{
+    display: block;
+    padding: 0;
+    width: 302px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .square {
@@ -23,4 +26,29 @@ body {
     display: grid;
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
+}
+
+.board{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.board > .row:nth-child(2) {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.board >.row > .cell:nth-child(2){
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.cell{
+    width: 100px ;
+    height: 100px;
 }
