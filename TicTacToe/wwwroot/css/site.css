@@ -52,3 +52,32 @@ form{
     width: 100px ;
     height: 100px;
 }
+
+#board {
+    width: 400px;
+    display: grid;
+    grid-template-rows: repeat(8, 100px);
+    grid-template-columns: repeat(8, 100px);
+}
+
+#board > .square {
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+}
+
+.Red{
+    background-color: red;
+}
+
+.Black {
+    background-color: black;
+}
+
+.checker{
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 3px solid gray;
+}
